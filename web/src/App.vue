@@ -50,7 +50,7 @@ export default {
       this.addProjectDialog = true
     },
     // 添加项目
-    async addProject (path) {
+    addProject (path) {
       this.form.address = path
     }
   }
