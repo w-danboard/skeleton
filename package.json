@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "web": "vue-cli-service serve vue/src/main.js",
-    "build-web": "vue-cli-service build vue/src/main.js",
+    "web": "vue-cli-service serve web/src/main.js",
+    "build-web": "vue-cli-service build web/src/main.js",
     "server": "nodemon src/index.js"
   },
   "keywords": [],
