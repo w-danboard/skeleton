@@ -144,7 +144,7 @@ export default {
   }
 }
 </script>
-<style scoped lang='postcss'>
+<style scoped>
   .idss-select-os-path {
     height: 450px;
   }
@@ -193,6 +193,7 @@ export default {
   }
 
   .idss-select-os-path .scroll__warpper ul li {
+    list-style: none;
     line-height: 25px;
   }
 

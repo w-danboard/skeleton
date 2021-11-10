@@ -8,7 +8,8 @@ import {
   Button,
   Dialog,
   Link,
-  Tooltip
+  Tooltip,
+  Tag
 } from 'element-ui'
 
 import 'element-ui/lib/theme-chalk/index.css' // Element UI样式
@@ -29,6 +30,7 @@ Vue.component(Button.name, Button)
 Vue.component(Dialog.name, Dialog)
 Vue.component(Link.name, Link)
 Vue.component(Tooltip.name, Tooltip)
+Vue.component(Tag.name, Tag)
 Vue.use(Request)
 
 new Vue({
