@@ -1,5 +1,4 @@
-let articleRouter = require('./articleRouter');
+const combineRouters = require('koa-combine-routers')
+const finderRouter = require('./finderRouter')
 
-let combineRouters = require('koa-combine-routers');
-
-module.exports = combineRouters(articleRouter);
+module.exports = combineRouters(finderRouter)

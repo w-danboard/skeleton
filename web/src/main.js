@@ -1,5 +1,15 @@
 import Vue from 'vue'
-import { Form, FormItem, Input, RadioGroup, Radio, Button, Dialog } from 'element-ui'
+import {
+  Form,
+  FormItem,
+  Input,
+  RadioGroup,
+  Radio,
+  Button,
+  Dialog,
+  Link,
+  Tooltip
+} from 'element-ui'
 
 import 'element-ui/lib/theme-chalk/index.css' // Element UI样式
 
@@ -17,6 +27,8 @@ Vue.component(Radio.name, Radio)
 Vue.component(RadioGroup.name, RadioGroup)
 Vue.component(Button.name, Button)
 Vue.component(Dialog.name, Dialog)
+Vue.component(Link.name, Link)
+Vue.component(Tooltip.name, Tooltip)
 Vue.use(Request)
 
 new Vue({

@@ -19,11 +19,13 @@
             @click="selectPath(pathList.slice(0,index + 1).join(sep))"
             size="mini">{{path}}</el-button>
         </template>
-        <el-link
-          icon="el-icon-edit"
-          style="margin-left: 10px;"
-          v-idss-tooltip="{ content: '输入路径' }"
-          @click="isShowFindPath = true"></el-link>
+        <el-tooltip content="输入路径">
+          <el-link
+            icon="el-icon-edit"
+            style="margin-left: 10px;"
+            @click="isShowFindPath = true">
+          </el-link>
+        </el-tooltip>
       </div>
       <!-- 输入框路径搜索 -->
       <el-input
@@ -38,9 +40,7 @@
         @blur="selectPath(findPath, true)"></el-input>
     </section>
     <!-- 列表展示 -->
-    <div
-      v-iscroll="{fadeScrollbars: false}"
-      class="scroll__warpper">
+    <div class="scroll__warpper">
       <ul>
         <li
           v-for="item in fileList"
@@ -185,7 +185,7 @@ export default {
     height: 320px;
     margin-top: 20px;
     margin-bottom: 20px;
-    overflow: hidden;
+    overflow: auto;
   }
 
   .idss-select-os-path .scroll__warpper ul {

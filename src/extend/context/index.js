@@ -1,5 +1,6 @@
 /** ***************** 用于挂载到ctx作用域下，扩展ctx ******************* */
 const methods = require('./methods')
+const validateObj = require('./validate')
 
 /**
  * 枚举一个对象，并挂载到ctx上
@@ -19,6 +20,8 @@ function registerObjToCtx (map, ctx) {
 function registerCtxProps (app) {
   // 挂载基础方法
   registerObjToCtx(methods, app.context)
+  // 挂载validate 验证相关
+  registerObjToCtx(validateObj, app.context)
 }
 
 module.exports = registerCtxProps

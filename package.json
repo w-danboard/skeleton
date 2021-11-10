@@ -17,12 +17,14 @@
     "core-js": "^3.6.5",
     "ejs": "^3.1.6",
     "element-ui": "^2.15.6",
+    "i18n": "^0.13.3",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
     "koa-combine-routers": "^4.0.2",
     "koa-router": "^10.1.1",
     "koa-static": "^5.0.0",
     "koa-views": "^7.0.2",
+    "parameter": "^3.6.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {

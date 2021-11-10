@@ -51,12 +51,7 @@ export default {
     },
     // 添加项目
     async addProject (path) {
-      await this.$request({
-        url: '/project/add',
-        method: 'post',
-        data: { path }
-      })
-      this.getProjectList()
+      this.form.address = path
     }
   }
 }
