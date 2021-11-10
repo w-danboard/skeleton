@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-form :model="form" label-width="90px">
+    <el-form :model="form" label-width="110px">
       <el-form-item label="环境:">
         <el-radio-group v-model="form.environment">
           <el-radio label="dev">开发环境</el-radio>
@@ -37,6 +37,9 @@
           <el-button v-else class="button-new-tag" size="small" @click="showInput">+ New Tag</el-button>
         </div>
       </el-form-item>
+      <el-form-item label="生成文件夹名:">
+        <el-input v-model="form.folder"></el-input>
+      </el-form-item>
     </el-form>
     <div>
       <el-button type="primary" size="mini">{{form.environment === 'dev' ? '生成骨架屏' : '打包'}}</el-button>
@@ -71,7 +74,8 @@ export default {
       form: {
         environment: 'dev',
         projec: '',
-        address: ''
+        address: '',
+        folder: 'skeletonPages'
       }
     }
   },
